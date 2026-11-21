@@ -1,33 +1,33 @@
 # 项目工作汇报 Skill
 
-用 Codex 将 Git 提交、工作日报和微信群聊记录整理成中文周报、月报或阶段总结。按项目或子系统输出「项目 / 子系统｜核心工作清单｜主要成果」三列表格，合并重复事项，并根据记录区分已提交、已测试、已验收和已上线等状态。
+根据日报、每周汇报、Git 提交，以及微信等聊天和协作记录，为任意项目生成周报、月报或阶段简报。核心工作使用 ①②③ 连续编号，主要成果注明交付、关键数字和完成阶段。
+
+单项目用「核心工作清单｜主要成果」两列。多项目在首列增加项目或系统名称，每个对象一行。
 
 ## 安装到 Codex
 
-将整个仓库克隆到用户级 Skill 目录。
+从本仓库复制 HTTPS 地址，替换命令中的 `<仓库地址>`。
 
 **Windows（PowerShell）**
 
 ```powershell
-git clone https://github.com/hjw-alt/project-work-report.git "$env:USERPROFILE\.agents\skills\project-work-report"
+git clone "<仓库地址>" "$env:USERPROFILE\.agents\skills\project-work-report"
 ```
 
 **macOS / Linux**
 
 ```bash
-git clone https://github.com/hjw-alt/project-work-report.git "$HOME/.agents/skills/project-work-report"
+git clone "<仓库地址>" "$HOME/.agents/skills/project-work-report"
 ```
 
-也可以在仓库页面选择 **Code → Download ZIP**，解压后把含有 `SKILL.md` 的文件夹命名为 `project-work-report`，放到用户主目录下的 `.agents/skills/` 中。
+也可以在仓库页面选择 **Code → Download ZIP**，解压后把含有 `SKILL.md` 的文件夹命名为 `project-work-report`，放到用户主目录下的 `.agents/skills/`。
 
 ## 使用示例
 
-在 Codex 中打开要汇报的 Git 仓库，再输入下面的指令。
+在 Codex 中提供可用的日报、周报、聊天记录或仓库，指定汇报范围和期间。
 
-> 用 $project-work-report 整理当前仓库 2026 年 10 月的 Git 提交，按业务模块生成月报，列出核心工作和主要成果。
+> 用 $project-work-report 整理知识库改版项目的 4 月工作简报。结合本月日报、每周汇报、当前仓库提交和我发来的消息，按核心工作清单、主要成果两列呈现。
 
-也可以上传日报和微信群聊导出，按项目合并多种材料。
+> 用 $project-work-report 把附件里的工作记录整理成 4 月和 5 月项目简报。按月分表，每个项目一行，保留工作序号和主要成果。
 
-> 用 $project-work-report 把这几份日报和群聊记录整理成项目周报。同一事项合并，标明已完成和待确认的成果。
-
-仓库附有[虚构汇报示例](references/report-example.md)和[本地 Git 取数说明](references/git.md)。
+参阅 [简洁汇报示例](references/report-example.md) 和 [Git 取数方法](references/git.md)。
