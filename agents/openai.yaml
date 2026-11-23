@@ -1,3 +1,3 @@
 interface:
   display_name: "项目工作汇报"
-  short_description: "汇总日报、周报、Git 提交与聊天记录，生成编号的工作清单和主要成果"
+  short_description: "汇总日报、周报、Git 提交与聊天记录，生成含工作清单和主要成果的 PDF 汇报"
